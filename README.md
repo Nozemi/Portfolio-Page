@@ -7,4 +7,6 @@ This is a simple static HTML/CSS portfolio page. This project is using:
 
 Planning to implement [Github Actions](https://github.com/features/actions) workflow to automatically deploy the site whenever changes are pushed on the master branch.
 
-To start a local development environment that changes in realtime, run `dev-server` task in [package.json](/package.json).
+To start a local development environment that changes in realtime, run `dev-server`-task in [package.json](/package.json).
+
+To build a production version of this project, run `build`-task in [package.json](/package.json)
