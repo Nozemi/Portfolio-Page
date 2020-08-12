@@ -1,0 +1,81 @@
+
+.profile {
+
+  & > .content {
+    display: flex;
+    flex-flow: row nowrap;
+
+    @include media-breakpoint-down(sm) {
+      flex-flow: column;
+      align-items: center;
+    }
+  }
+
+  .picture {
+    height: 200px;
+    width: 187px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 1rem 1rem 0;
+
+    @include media-breakpoint-down(sm) {
+      margin: 0 0 1rem 0;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  .about-me {
+    align-self: flex-start;
+
+    @include media-breakpoint-down(sm) {
+      margin-top: .8rem;
+    }
+  }
+
+  .details {
+
+    @include media-breakpoint-down(sm) {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+    }
+
+    .detail {
+      display: flex;
+      flex-flow: row nowrap;
+
+      & > * {
+        padding: .1rem;
+      }
+
+      .label {
+        font-weight: bold;
+      }
+    }
+
+    .links {
+      border-top: 1px solid #5ba9ee;
+      margin-top: .4rem;
+      padding-top: .4rem;
+
+      .value {
+        display: flex;
+
+        a {
+          margin: 0 .2rem;
+          color: #5ba9ee;
+
+          svg {
+            height: 35px;
+            width: auto;
+            fill: #2f80ee;
+          }
+        }
+      }
+    }
+  }
+}

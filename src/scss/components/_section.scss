@@ -1,0 +1,25 @@
+
+
+.section {
+  overflow: hidden;
+
+  & > .content, & > .title {
+    padding: .8rem 1rem;
+  }
+
+  & > .content {
+    padding-top: 0;
+  }
+
+  & > .title {
+    background: #5ba9ee;
+    padding: .5rem .7rem;
+    border-radius: .5rem;
+    margin: .5rem;
+  }
+
+  background: #ffffff;
+  margin: 1rem 0;
+  border-radius: .5rem;
+  @include box-shadow();
+}

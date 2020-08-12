@@ -1,0 +1,13 @@
+.tags {
+  margin-top: .5rem;
+  display: flex;
+  flex-flow: row wrap;
+
+  & > div {
+    background: #a5ddee;
+    padding: .2rem .5rem;
+    margin: .2rem;
+    border-radius: .2rem;
+    width: auto;
+  }
+}

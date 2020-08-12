@@ -1,0 +1,28 @@
+.experience {
+
+  .experience-item {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    padding: .5rem 0;
+
+    @include media-breakpoint-down(md) {
+      grid-template-columns: 30% 70%;
+    }
+
+    &:not(:last-child) {
+      border-bottom: 1px solid #5ba9ee;
+    }
+
+    .details {
+      padding: 0 .5rem 0 0;
+
+      .employer {
+        font-weight: bold;
+      }
+
+      .duration {
+        font-style: italic;
+      }
+    }
+  }
+}
